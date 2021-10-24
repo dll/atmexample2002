@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259379581249
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259379582171
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259379592218
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259379687281
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259379688468
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259379691718
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259379692687
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259379733156
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259379733499
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259379734077
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259379735109
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.selectAll,1259379763984
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379821187
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379834265
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259380097327
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259380307968
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259380355577
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259380355827
+activated,view,org.eclipse.ui.views,3.3.1.M20081112-0800,org.eclipse.ui.views.PropertySheet,1259380389234
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259380390937
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259380405109
+started,bundle,org.eclipse.ui.views.properties.tabbed,3.4.2.M20090127-1700,org.eclipse.ui.views.properties.tabbed,1259380407640
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259380407702
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259380420202
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259380428702

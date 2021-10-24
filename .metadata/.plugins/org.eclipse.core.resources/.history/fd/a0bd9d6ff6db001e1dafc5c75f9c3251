@@ -1,0 +1,111 @@
+// 
+//ATM Simulation Implementation - Question Dialog Box
+
+/*
+ * Example ATM simulation - file QuestionDialog.java
+ *
+ * This file implements the a pop-up dialog that is utilized by the GUI for
+ * some of the ATM components.  Since it is only utilized by classes in package
+ * atmparts, it is not made public.
+ *
+ * This version has been modified to work correctly under JDK 1.1 (though it still
+ * uses the 1.0.2 event model)
+ *
+ * Copyright (c) 1997, 1999 - Russell C. Bjork
+ *
+ */
+
+package atm.atmparts;
+import java.awt.*;
+
+//
+
+//--------------------------------------------------------------------------------
+
+Class QuestionDialog
+
+class QuestionDialog extends Dialog
+  {
+
+    //
+
+//--------------------------------------------------------------------------------
+
+
+    public QuestionDialog(String question, Component caller)
+      { super(GUILayout.getContainingFrame(), true);
+        setLayout(new BorderLayout());
+        add("North", new Label(question));
+        _answer = new TextField("");
+        add("Center", _answer);
+        Panel buttonPanel = new Panel();
+        _okay = new Button("OK");
+        buttonPanel.add(_okay);
+        add("South", buttonPanel);
+        pack();
+
+        // Center this box in the outermost container holding the caller.  If
+        // GUILayout found a frame for us when it did the layout, use this;
+        // otherwise follow parents from the caller until we get to one that
+        // has a null parent.
+        
+        Component topLevel;
+        if (GUILayout.getContainingFrame() != null)
+            topLevel = GUILayout.getContainingFrame();
+        else
+          { topLevel = caller;
+            while (topLevel.getParent() != null)
+                topLevel = topLevel.getParent();
+          }
+        Point topLevelLocation = topLevel.location();
+        Dimension topLevelSize = topLevel.size();
+        Dimension dialogSize = size();
+        int dialogX = topLevelLocation.x + 
+                      (topLevelSize.width - dialogSize.width) / 2;
+        int dialogY = topLevelLocation.y + 
+                      (topLevelSize.height - dialogSize.height) / 2;
+        if (dialogX < 0) dialogX = 0;
+        if (dialogY < 0) dialogY = 0;
+        move(dialogX, dialogY);    
+      }
+   
+    //
+
+//--------------------------------------------------------------------------------
+
+
+    public String answer()
+      {	_answer.requestFocus();
+        // This pops up the box, and then blocks until it is disposed by the answer
+      	// method below, which occurs when the user clicks the OK button or presses
+      	// return in the answer field.  
+      	show();
+        return _answer.getText();
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+
+    public boolean action(Event e, Object arg)
+      { if (e.target == _answer || e.target == _okay )
+          { hide();
+            dispose();
+            return true;
+          }
+        else
+            return false;
+      }
+      
+    //
+
+//--------------------------------------------------------------------------------
+
+
+    private TextField _answer;
+    private Button _okay;
+  }
+
+//
+

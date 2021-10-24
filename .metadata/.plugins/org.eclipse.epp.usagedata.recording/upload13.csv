@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259373389499
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259373427656
+started,bundle,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui,1259373432265
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373443437
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373443499
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373443515
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373443562
+activated,view,org.eclipse.ui.views,3.3.1.M20081112-0800,org.eclipse.ui.views.PropertySheet,1259373443593
+opened,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.StateDiagramEditor,1259373443640
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.StateDiagramEditor,1259373443656
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259373452359
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373481421
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373481452
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373481452
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373481499
+activated,view,org.eclipse.ui.views,3.3.1.M20081112-0800,org.eclipse.ui.views.PropertySheet,1259373481531
+opened,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259373481562
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259373481609
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373481718
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373482202
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259373499171
+opened,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.TypeHierarchy,1259373508062
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.TypeHierarchy,1259373508093
+executed,command,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.edit.text.java.open.type.hierarchy,1259373508390
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259373530937

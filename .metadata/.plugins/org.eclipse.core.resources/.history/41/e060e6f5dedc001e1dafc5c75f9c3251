@@ -1,0 +1,57 @@
+package atm;
+
+import java.lang.Math;
+
+public class CouplingMeasure {
+	public static void main(String args[]) {
+		int i, j, k;
+		int a[][] = {
+				{ 0, 0, 0, 0 }, 
+				{ 0, 2, 1, 3 }, 
+				{ 0, 1, 1, 3 }, 
+				{ 0, 6, 4, 4 }, 
+				{ 0, 1, 1, 1 },
+				{ 0, 3, 3, 3 },
+			    { 0, 1, 1, 0 }, 
+			    { 0, 1, 1, 0 }, 
+			    { 0, 1, 1, 0 },
+			    { 0, 1, 1, 0 },
+				{ 0, 1, 1, 3 }, 
+				{ 0, 0, 0, 0 },
+				{ 0, 1, 1, 0 },
+				{ 0, 5, 3, 11}, 
+				{ 0, 4, 3, 14},
+				{ 0, 2, 2, 0 },
+				{ 6, 1, 0, 3 },
+				{ 0, 4, 3, 6 }, 
+				{ 0, 4, 3, 14}, 
+				{ 0, 2, 2, 0 },
+				{ 6, 1, 0, 3 },
+				{ 0, 3, 2, 6 }, 
+				{ 0, 3, 3, 12}, 
+				{ 0, 2, 2, 0 },
+				{ 6, 1, 0, 3 },
+				{ 0, 2, 1, 6 }, 
+				{ 0, 3, 3, 10},
+				{ 0, 2, 2, 0 },
+				{ 6, 1, 0, 3 }};
+		int maxcol[] = { 0, 0, 0, 0 };
+		int mincol[] = { 100, 100, 100, 100 };
+		for (i = 0; i < 29; i++)
+			for (j = 0; j < 4; j++)
+					if (a[i][j] > maxcol[j])
+						maxcol[j] = a[i][j];
+					if (a[i][j] < mincol[j])
+						mincol[j] = a[i][j];
+				}
+
+		double result[] = new double[29];
+		for (i = 0; i < 29; i++)
+				for (k = 0; k < 4; k++)
+					s = s
+							+ Math.pow((a[i][j][k] - mincol[k])
+									/ ((maxcol[k] - mincol[k])), 2.0);
+				result[i][j] = Math.pow(s, 0.5);
+			}
+}
+	

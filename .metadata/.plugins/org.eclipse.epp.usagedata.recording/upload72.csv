@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466446327
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466463968
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466575843
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466591671
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466595921
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466601437
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466613656
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466615859
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466641921
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466667218
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259479333687
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259479363265
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259479436359
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259479576812
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259479598265
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259479682859
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259479682984
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259479694656
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259479695952
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259479698749
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.paste,1259479699968
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259480201609
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259480205171
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259480213577
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259480220109

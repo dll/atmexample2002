@@ -1,0 +1,4 @@
+#Sat Nov 28 10:54:24 CST 2009
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=eclipseuml

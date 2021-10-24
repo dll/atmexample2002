@@ -1,0 +1,5 @@
+package atm.util;
+
+public class Status {
+
+}

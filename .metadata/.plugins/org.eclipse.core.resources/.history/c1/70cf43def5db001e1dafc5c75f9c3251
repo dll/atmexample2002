@@ -1,0 +1,482 @@
+//
+//ATM Simulation Implementation - Individual Transactions
+
+/*
+ * Example ATM simulation - file Transaction.java
+ *
+ * This file contains the classes that represent the various kinds of
+ * transactions that the ATM can perform.  The class Transaction serves as the
+ * base class, and is the only publically-accessible classes.  The remaining
+ * classes implement specific types of transaction.  Objects of these classes are
+ * created by the chooseTransaction method of Transaction.
+ *
+ * Copyright (c) 1997 - Russell C. Bjork
+ *
+ */
+
+package atm.transaction;
+import atm.ATM;
+import atm.Bank;
+import atm.Session;
+import atm.util.Money;
+import atm.util.Status;
+
+
+//
+
+//--------------------------------------------------------------------------------
+
+Class Transaction
+
+public abstract class Transaction
+  {
+
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public Transaction(Session session, ATM atm, Bank bank)
+      { _session = session;
+        _atm = atm;
+        _bank = bank;
+        _serialNumber = ++ _lastSerialNumberAssigned;
+        _newBalance = new Money();
+        _availableBalance = new Money();
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public static Transaction chooseTransaction(Session session, ATM atm, Bank bank)
+      { String transactionMenu[] =
+          { "Cash Withdrawl",
+            "Deposit",
+            "Transfer Funds Between Accounts",
+            "Balance Inquiry"
+          };
+         switch (atm.getMenuChoice("Please choose a transaction type:",
+                                   4, 
+                                   transactionMenu))
+          {
+            case 1: return new WithdrawlTransaction(session, atm, bank);
+            case 2: return new DepositTransaction(session, atm, bank);
+            case 3: return new TransferTransaction(session, atm, bank);
+            case 4: return new InquiryTransaction(session, atm, bank);
+            default: return null; // To keep the compiler happy
+          }
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int doTransactionUseCase()
+      {
+        int code;
+        code = getTransactionSpecificsFromCustomer();
+        if (code != Status.SUCCESS)
+            return code;
+        code = sendToBank();
+        if (code == Status.INVALID_PIN)
+          {
+            code = _session.doInvalidPINExtension();
+            if (code == Status.INVALID_PIN)
+                return code;
+          }
+        if (code == Status.SUCCESS)
+            code = finishApprovedTransaction();
+        return code;
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public abstract int getTransactionSpecificsFromCustomer();
+    
+    /* 
+View Implementation for: WithdrawlTransaction DepositTransaction TransferTranacstion InquiryTransaction
+    */
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public abstract int sendToBank();
+    
+    /* 
+View Implementation for: WithdrawlTransaction DepositTransaction TransferTranacstion InquiryTransaction
+    */
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public abstract int finishApprovedTransaction();
+
+    /* 
+View Implementation for: WithdrawlTransaction DepositTransaction TransferTranacstion InquiryTransaction
+    */
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    // Instance variables common to all kinds of transaction
+    
+    protected Session _session;
+    protected ATM     _atm;
+    protected Bank    _bank;
+
+    // Every transaction is assigned a unique serial number that is used
+    // to identify it in communications with the bank and on the receipt.
+
+    protected int     _serialNumber;
+
+    // Every transaction gets both the updated balance and available
+    // balance for printing on the receipt.
+
+    protected Money   _newBalance,
+                      _availableBalance;
+
+    // This class member is used to assign serial numbers sequentially
+    
+    private static int _lastSerialNumberAssigned = 0;
+
+  }
+
+//
+
+//--------------------------------------------------------------------------------
+
+Class WithdrawlTransaction
+
+class WithdrawlTransaction extends Transaction
+  {    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public WithdrawlTransaction(Session session, ATM atm, Bank bank)
+      { super(session, atm, bank);
+      } 
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int getTransactionSpecificsFromCustomer()
+      {
+        _fromAccount = _bank.chooseAccountType("withdraw from", _atm);
+        String menu[] =
+          { "$ 20", "$ 40", "$ 60", "$ 80", "$ 100", "$ 200", "$ 300" };
+        switch (_atm.getMenuChoice("Please choose an amount:", 7, menu))
+          {
+            case 1: _amount = new Money(20); break;
+            case 2: _amount = new Money(40); break;
+            case 3: _amount = new Money(60); break;
+            case 4: _amount = new Money(80); break;
+            case 5: _amount = new Money(100); break;
+            case 6: _amount = new Money(200); break;
+            case 7: _amount = new Money(300); break;
+          }
+        if (_atm.checkIfCashAvailable(_amount))
+           return Status.SUCCESS;
+        else
+           return Status.TOO_LITTLE_CASH;
+      }
+    
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int sendToBank()
+      {
+        return _bank.initiateWithdrawl(_session.cardNumber(),
+                                       _session.PIN(),
+                                       _atm.number(),
+                                       _serialNumber,
+                                       _fromAccount,
+                                       _amount,
+                                       _newBalance,
+                                       _availableBalance);
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+
+    public int finishApprovedTransaction()
+      {
+        _atm.dispenseCash(_amount);
+        _bank.finishWithdrawl(_atm.number(), _serialNumber, true);
+        _atm.issueReceipt(_session.cardNumber(),
+                          _serialNumber, 
+                          "WITHDRAWL FROM " + _bank.accountName(_fromAccount),
+                          _amount,
+                          _newBalance,
+                          _availableBalance);
+         return Status.SUCCESS;
+      }
+
+    // 
+
+//--------------------------------------------------------------------------------
+
+    
+    // Instance variables of WithdrawlTransaction
+
+    private int   _fromAccount;
+    private Money _amount;
+  }    
+
+
+//
+
+//--------------------------------------------------------------------------------
+
+Class DepositTransaction
+
+class DepositTransaction extends Transaction
+  {
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public DepositTransaction(Session session, ATM atm, Bank bank)
+      { super(session, atm, bank);
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int getTransactionSpecificsFromCustomer()
+      {
+        _toAccount = _bank.chooseAccountType("deposit to", _atm);
+        _amount = _atm.getAmountEntry();
+        return Status.SUCCESS;
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int sendToBank()
+      {
+        try
+          { Thread.sleep(3 * 1000); }
+        catch (InterruptedException e)
+          { }
+        return _bank.initiateDeposit(_session.cardNumber(),
+                                     _session.PIN(),
+                                     _atm.number(),
+                                     _serialNumber,
+                                     _toAccount,
+                                     _amount,
+                                     _newBalance,
+                                     _availableBalance);
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int finishApprovedTransaction()
+      {
+        boolean envelopeAccepted = _atm.acceptEnvelope();
+        _bank.finishDeposit(_atm.number(), _serialNumber, envelopeAccepted);
+        if (envelopeAccepted)
+          {
+            _atm.issueReceipt(_session.cardNumber(),
+                              _serialNumber,
+                              "DEPOSIT TO " + _bank.accountName(_toAccount),                        
+                              _amount,
+                              _newBalance,
+                              _availableBalance);
+            return Status.SUCCESS;             
+          }
+        else
+            return Status.ENVELOPE_DEPOSIT_TIMED_OUT;
+      }
+      
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    // Instance variables of DepositTransaction
+
+    private int   _toAccount;
+    private Money _amount;
+  }
+  
+
+//
+
+//--------------------------------------------------------------------------------
+
+Class TransferTransaction
+
+class TransferTransaction extends Transaction
+  {    
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public TransferTransaction(Session session, ATM atm, Bank bank)
+      { super(session, atm, bank);
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int getTransactionSpecificsFromCustomer()
+      {
+        _fromAccount = _bank.chooseAccountType("transfer from", _atm);
+        _toAccount = _bank.chooseAccountType("transfer to", _atm);
+        _amount = _atm.getAmountEntry();
+        return Status.SUCCESS;
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int sendToBank()
+      {
+        return _bank.doTransfer(_session.cardNumber(),
+                                _session.PIN(),
+                                _atm.number(),
+                                _serialNumber,
+                                _fromAccount,
+                                _toAccount,
+                                _amount,
+                                _newBalance,
+                                _availableBalance);
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+        
+    public int finishApprovedTransaction()
+      {
+        _atm.issueReceipt(_session.cardNumber(),
+                          _serialNumber,
+                          "TRANSFER " + _bank.accountName(_fromAccount) +
+                             " TO " + _bank.accountName(_toAccount),
+                          _amount,
+                          _newBalance,
+                          _availableBalance);
+         return Status.SUCCESS;
+      }
+
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    // Instance variables of TransferTransaction
+
+    private int   _fromAccount;
+    private int   _toAccount;
+    private Money _amount;
+  }
+  
+
+//
+
+//--------------------------------------------------------------------------------
+
+Class InquiryTransaction
+
+class InquiryTransaction extends Transaction
+  {    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public InquiryTransaction(Session session, ATM atm, Bank bank)
+      { super(session, atm, bank); }
+
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int getTransactionSpecificsFromCustomer()
+      {
+        _fromAccount = _bank.chooseAccountType("balance for", _atm);
+        return Status.SUCCESS;
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int sendToBank()
+      {
+        return _bank.doInquiry(_session.cardNumber(),
+                               _session.PIN(),
+                               _atm.number(),
+                               _serialNumber,
+                               _fromAccount,
+                               _newBalance,
+                               _availableBalance);
+      }
+    
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    public int finishApprovedTransaction()
+      {
+        _atm.issueReceipt(_session.cardNumber(),
+                          _serialNumber,
+                          "INQUIRY FROM " + _bank.accountName(_fromAccount),
+                          new Money(0),  // will cause this line to be omitted
+                          _newBalance,
+                          _availableBalance);
+         return Status.SUCCESS;
+      }
+
+    //
+
+//--------------------------------------------------------------------------------
+
+    
+    // Instance variables of InquiryTransaction
+
+    private int   _fromAccount;
+
+  }   
+    
+//
+

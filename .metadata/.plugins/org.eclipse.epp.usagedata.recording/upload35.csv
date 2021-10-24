@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259380429843
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259380429937
+closed,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259380429952
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259380438640
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259380443671
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259381045968
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259391413874
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259391427296
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259392676937
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259392678577
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259392687843
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259392721312
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259392728015
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259392747656
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259392748843
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259392753062
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259392758499
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259392788140
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259394236390
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259394244077
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259394252015
+opened,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259394252093
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259394252140
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259394255062
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.paste,1259394256031

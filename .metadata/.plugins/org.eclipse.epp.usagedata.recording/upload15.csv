@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259373640671
+closed,editor,org.eclipse.ui.editors,3.4.0.v20080603-2000,org.eclipse.ui.DefaultTextEditor,1259373640687
+started,bundle,org.eclipse.jdt.debug,3.4.1.v20081216_r342,org.eclipse.jdt.debug,1259373642343
+started,bundle,org.eclipse.jdt.debug.ui,3.3.1.v20080730_r341,org.eclipse.jdt.debug.ui,1259373642421
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259373642452
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259373647140
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373661062
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373661093
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373661093
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373661140
+activated,view,org.eclipse.ui.views,3.3.1.M20081112-0800,org.eclipse.ui.views.PropertySheet,1259373661171
+opened,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259373661218
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259373661249
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373661374
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373664827
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259373694046
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259373707171
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259373728624
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373752577
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373752609
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259373752624
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373924968
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259373935968
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259373936077
+closed,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259373936093

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.undo,1259377820999
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259377825968
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259377850702
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377862984
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377863015
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377863031
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377863077
+activated,view,org.eclipse.ui.views,3.3.1.M20081112-0800,org.eclipse.ui.views.PropertySheet,1259377863124
+opened,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259377863156
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259377863187
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377863281
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377864156
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259377876015
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377889671
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377889702
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377889702
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377889749
+activated,view,org.eclipse.ui.views,3.3.1.M20081112-0800,org.eclipse.ui.views.PropertySheet,1259377889812
+opened,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259377889843
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259377889890
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377889968
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259377890671
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259377904499
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259377906499
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259377909031

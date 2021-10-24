@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259375081187
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259375098656
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259375111577
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259375129749
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259375145812
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.selectAll,1259375151187
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.selectAll,1259375164609
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259375183156
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_out,1259375188124
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_out,1259375188484
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_out,1259375188718
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_out,1259375188968
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_out,1259375189156
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259375191921
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259375211015
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259375215812
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259375216765
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259375217609
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259375218249
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259375219234
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259375220562
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_in,1259375222046
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259375227202
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_out,1259375234468
+executed,command,org.eclipse.gef,3.4.1.v20080806,org.eclipse.gef.zoom_out,1259375234781

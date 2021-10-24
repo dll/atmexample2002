@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465641859
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259465642827
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465650609
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465653437
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465696265
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465745327
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465749374
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465753031
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465857437
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465862609
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259465870593
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465924937
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259465927249
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259465929968
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465934874
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465937624
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259465950562
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466003577
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466012281
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466025359
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466027765
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466164812
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466172437
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466184281
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259466206046

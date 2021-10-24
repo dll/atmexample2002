@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259486598577
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259486599296
+activated,view,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.DebugView,1259486610359
+executed,command,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.commands.Terminate,1259486613952
+closed,editor,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.sourcelookup.CommonSourceNotFoundEditor,1259486613999
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259486616702
+activated,view,org.eclipse.ui.ide,3.4.2.M20090127-1700,org.eclipse.ui.views.TaskList,1259486623843
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259486624984
+activated,view,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.DebugView,1259486649077
+executed,command,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.commands.Resume,1259486649281
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259486693015
+executed,command,,,AUTOGEN:::org.eclipse.jdt.debug.CompilationUnitEditor.BreakpointRulerActions/org.eclipse.jdt.debug.ui.actions.ManageBreakpointRulerAction,1259486730984
+activated,view,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.DebugView,1259486734390
+executed,command,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.commands.Terminate,1259486734452
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259486737046
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.file.save,1259486739031
+activated,view,org.eclipse.ui.console,3.3.1.v20090128_r342,org.eclipse.ui.console.ConsoleView,1259486747390
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259486751187
+activated,view,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.DebugView,1259486765234
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259486765265
+closed,view,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.DebugView,1259486765281
+activated,view,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.BreakpointView,1259486768593
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259486769781
+closed,view,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.BreakpointView,1259486769796
+activated,view,org.eclipse.debug.ui,3.4.2.v20090110_r342,org.eclipse.debug.ui.VariableView,1259486769952

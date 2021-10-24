@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379071046
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1259379071140
+closed,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259379071156
+activated,view,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.PackageExplorer,1259379072765
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379087109
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379122843
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379122874
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379122906
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379122906
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379122952
+activated,view,org.eclipse.ui.views,3.3.1.M20081112-0800,org.eclipse.ui.views.PropertySheet,1259379122999
+opened,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259379123062
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259379123093
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379123249
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379123281
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379123296
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379136640
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379136640
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1259379140906
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.selectAll,1259379174109
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259379293702
+no handler,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.copy,1259379299671
+activated,view,org.eclipse.help.ui,3.3.102.v20081014_34x,org.eclipse.help.ui.HelpView,1259379304827
+activated,editor,com.omondo.uml.core,3.4.1.v20081211,com.omondo.uml.ClassDiagramEditor,1259379578468
+closed,view,org.eclipse.help.ui,3.3.102.v20081014_34x,org.eclipse.help.ui.HelpView,1259379578515
